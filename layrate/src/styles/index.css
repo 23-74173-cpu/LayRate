@@ -1,0 +1,13 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@layer components {
+	.btn-consistent {
+		@apply inline-flex items-center justify-center gap-2 rounded-md h-9 sm:h-10 px-3 sm:px-4 text-xs sm:text-sm leading-none transition-colors;
+	}
+
+	.btn-consistent.btn-icon-only {
+		@apply h-9 sm:h-10 w-9 sm:w-10 px-0;
+	}
+}
